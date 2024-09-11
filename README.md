@@ -50,3 +50,20 @@ pnpm --version
     - Snap shot 기술을 사용해서 변경을 업데이트한다.
 
 > Snap shot 기술이면 Git 이랑 비슷한 기술인가?
+
+# React 설치하기
+
+Next.js, Remix 등을 사용할 수 있다. 하지만 프레임워크 없이 Vite를 사용해서 설치한다.
+
+```shell
+pnpm create vite
+```
+
+## Babel
+
+Babel은 현대의 JavaScript 문법을 다양한 브라우저에서 사용할 수 있도록 호환성에 맞게 문법을 변환해 주는 도구다.
+
+## Webpack
+
+- 현대의 웹 개발은 프레임워크, 라이브러리, 이미지 등 다양한 자료가 모여 만들어진다. Webpack은 이러한 다양한 모듈을 모아 경량화한다.
+- 현재는 Webpack 외에 다양한 번들러를 사용한다. 예를 들어 Vite를 사용한다. 자세한 이야기는 [다음](https://vitejs.dev/guide/why.html)을 참고한다. 
