@@ -107,4 +107,30 @@ yarn run dev -- --open --port 3000
 
 - JavaScript에서 변수를 작성할 때 소문자 camelCase를 선호한다.
 - 반면 React 컴포넌트(Component)는 PascalCase를 사용한다.
-    - 기존 HTML 태그가 아님을 분명하게 구분한다. 
+    - 기존 HTML 태그가 아님을 분명하게 구분한다.
+
+# JSX 연습하기
+
+- className = class
+
+```typescript jsx
+<button type="button" className="primary">
+  좋아요
+</button>
+```
+
+- 표현식을 사용해서 렌더링 가능하다.
+
+```typescript jsx
+<h1> 어서 오세요! {title.toUpperCase()}</h1>
+<h1> 어서 오세요! {2 + 2}!</h1>
+```
+
+- 주석을 중괄호 안에 작성한다.
+
+```typescript jsx
+{
+  /* 1 + 1 = 2 */
+}
+<h1>1 + 1 = {1 + 1}<h1>
+```
