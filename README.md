@@ -40,3 +40,13 @@ pnpm --version
 ```
 
 설치한 pnpm 버전을 출력한다.
+
+# Real DOM vs. Virtual DOM
+
+- 상태 변화가 일어났을 때 어떻게 처리하는가에 따라 DOM을 구분한다.
+- 기존의 DOM 은 상태가 변화했을 때 모든 데이터를 변경한다. 반면 Virtual DOM은 변화가 생긴 부분만 변경한다.
+- 그렇다면 Virtual DOM은 어떤 기술을 사용할까?
+    - 간단하게 생각하면 Real DOM(기존)을 경량화해서 복사한 것이 Virtual DOM이다.
+    - Snap shot 기술을 사용해서 변경을 업데이트한다.
+
+> Snap shot 기술이면 Git 이랑 비슷한 기술인가?
