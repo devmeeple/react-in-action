@@ -74,3 +74,37 @@ Babel은 현대의 JavaScript 문법을 다양한 브라우저에서 사용할 �
     - 불필요한 패키지가 쌓여서 저장 공간을 낭비한다.
 - 하지만 npx를 사용해서 다운로드하지 않고, 레지스트리(Registry)에서 패키지를 가져와 임시로 실행하는 방법이다.
     - 저장 공간을 낭비하지 않는다.
+
+# React 애플리케이션 구조
+
+- `index.html`: 브라우저에서 실행할 수 있도록 코드를 추가한다.
+- `public`: 빌드 도구로 처리되지 않고 브라우저에 직접 제공하는 정적 파일을 관리한다.
+- `src`: 소스 코드를 저장한다.
+- `src/main`: 진입점이다.
+    - 이전 강의에서는 `index` 파일이다. 변경된 걸까? Vite를 사용해서 그런 건지 검증이 필요하다.
+
+## Vite 포트를 변경하는 방법
+
+Vite는 5173 포트를 기본으로 사용한다. 하지만 포트를 변경하려면 어떻게 해야 할까?
+
+1. 명령을 작성할 때 포트를 변경한다.(CLI)
+
+```shell
+yarn run dev -- --open --port 3000
+```
+
+2. script를 수정한다.
+
+```shell
+"dev": "vite --open --port 3000",
+```
+
+3. 설정 파일을 수정한다.
+
+`vite.config`에 server 옵션을 추가한다.
+
+## Naming Convention
+
+- JavaScript에서 변수를 작성할 때 소문자 camelCase를 선호한다.
+- 반면 React 컴포넌트(Component)는 PascalCase를 사용한다.
+    - 기존 HTML 태그가 아님을 분명하게 구분한다. 
