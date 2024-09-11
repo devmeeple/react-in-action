@@ -140,3 +140,16 @@ yarn run dev -- --open --port 3000
 Props는 컴포넌트에 데이터를 전달하는 방법이다. React는 단방향으로 데이터를 전달한다. 상위 요소에서 하위 요소로 전달한다.
 
 > *TypeScript에서 Props를 사용할 때 타입을 정의하자.
+
+# 정리하기
+
+1. React 설치하기
+2. React 만들기, 기본 살펴보기
+
+- 컴포넌트는 PascalCase로 정의한다.
+    - MyButton
+- JSX는 JavaScript 확장 문법이다. 표현식으로 렌더링 할 수 있다.
+- JSX는 HTML 속성과 다르다. 다른 문법을 사용한다.
+    - ClassName = class
+- Props는 단방향이다. 상위에서 하위로 데이터를 전달한다.
+
