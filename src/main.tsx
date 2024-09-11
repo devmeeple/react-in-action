@@ -6,6 +6,6 @@ import './index.css';
 // React DOM 그리기
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App/>
+    <App protagonist="Emil Sinclair"/>
   </StrictMode>,
 );

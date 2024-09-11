@@ -1,14 +1,14 @@
 import './App.css';
 
-const title = 'React';
+interface LearnProps {
+  protagonist: string;
+}
 
-function App() {
-
+function App({protagonist}: LearnProps) {
   return (
     <>
       <header>
-        <h1>어서 오세요! {title} 세계로!</h1>
-        <h1>1 + 1 = {1 + 1}</h1>
+        <h1>데미안: {protagonist}</h1>
         <button type="button" className="primary">
           좋아요
         </button>
