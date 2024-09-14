@@ -158,5 +158,6 @@ Props는 컴포넌트에 데이터를 전달하는 방법이다. React는 단방
 > [<출처: React Router>](https://reactrouter.com/en/main)
 
 ```shell
-yarn add react-router-dom
+pnpm add react-router-dom
+pnpm add @types/react-router-dom -D
 ```
